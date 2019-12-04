@@ -23,6 +23,11 @@
 
 
 #include <iostream>
+    int a;
+    int b:
+    floax
+
+
 
 using namespace std;
 
