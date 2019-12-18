@@ -15,7 +15,7 @@ int main(int argc, char **argv)
     cout <<"Podaj stawkę:" <<endl;
     cin>>stawka; 
     if ( ln>=30)
-    cout<<(ln*)
+    cout<<(ln*c)
     
     else (ln>30)
     
