@@ -6,28 +6,63 @@
 
 #include <iostream>
 using namespace std;
-
-
-int main(int argc, char **argv)
-{
-	float ocena, Liczba_ocen, suma;
-    suma=0
-    cout<< 'Podaj liczbe ocen:';
-    cin>>liczba_ocen;
-    while (liczba_ocen<1) {
-        cout<< 'Podaj liczbę ocen:';
-        cin>> liczba_ocen;
-}
-    for (5)
-    cout<< 'Podaj ocenę:';
+void pobierz0ceny(int tb[], int n) {
+    int ocena = 0;
+    for (int i=0; i<n; i++){
+	cout<< "Podaj ocene:";
     cin>>ocena;
-    while (ocena<1 or ocena >5){
-    cout<< 'Podaj prawidłową ocenę:';
-    cin>>ocena;
-    suma=suma+ocena;
     
+    while (n > 0);
     
+    if(ocena > 0 && ocena < 7){
+     tb[i]= ocena;
+     i++;
+     n--;
+     
+     
     }
+  }      
+}
+float liczsrednia(int[], int n){
+    int suma = 0;
+    for (int i=0; i<n; i++){
+    cout<<tb[i]<<"";
+    suma= suma + tb[i];
+    
+    
+    
+    
+   } 
+    
+    
+    
+}
+
+
+
+
+void drukuj(int tb[], int n) {
+    for (int i=0; i<n; i++){
+    cout<<tb[i]<<"";
+   } 
+}
+
+
+
+
+
+
+int main(int argc, char **argv){
+{
+    
+    int n;
+	
+    cout<< "Podaj liczbe ocen:";
+    cin>>n;
+    int oceny[n];
+    pobierz0ceny(oceny, n);
+    drukuj(oceny,n);
+    
+   }
 	return 0;
 }
-
