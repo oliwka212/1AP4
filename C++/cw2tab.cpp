@@ -14,7 +14,7 @@ void wypelnij(int t[][10], int w, int k, int n) {
         for(int j=0; j<k; j++) {
             t[i][j] = rand() % (n + 1);
             cout << i << "," << j << " " << t[i][j] << endl;   
-            
+//wydrukuj maksymalną sume oraz indeks wiersza
         }
     }
 }
@@ -25,6 +25,18 @@ void sumujW(int t[][10], int w, int k){
             
                 cout << setw(4) << t[i][j];  
                 sumaW += t[i][j]; 
+        }
+        cout << setw(6) << endl;
+    }
+}
+void sumujk(int t[][10], int w, int k){
+    int sumak = 0;
+    srand(time(NULL));
+    for(int i=0; i < k; i++) {
+        for(int j=0; j<k; j++) {
+            
+                cout << setw(4) << t[i][j];  
+                sumak += sumak+t[j] [i]; 
         }
         cout << setw(6) << endl;
     }
